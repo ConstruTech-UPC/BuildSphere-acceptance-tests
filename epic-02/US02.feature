@@ -21,8 +21,8 @@ Feature: Edición de un Proyecto Existente
 
     Examples:
       | NombreNuevo   | NombreExistente  | MensajeError                                            |
-      | Proyecto Gamma| Proyecto Alpha   | "Error: El nombre 'Proyecto Gamma' ya está en uso."      |
-      | Proyecto Delta| Proyecto Beta    | "Error: El nombre 'Proyecto Delta' ya está en uso."      |
+      | Proyecto Gamma| Proyecto Gamma   | "Error: El nombre 'Proyecto Gamma' ya está en uso."      |
+      | Proyecto Delta| Proyecto Delta   | "Error: El nombre 'Proyecto Delta' ya está en uso."      |
 
   Scenario Outline: Intento de eliminar información obligatoria durante la edición
     Given un usuario edita los detalles de un proyecto
